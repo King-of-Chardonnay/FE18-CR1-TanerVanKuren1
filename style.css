@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    min-height: 100vh;
+}
+
+
+.container img {
+    object-fit: cover;
+    width: 100%;
+    height: 40vh;
+
+    display: block;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /*grid-auto-rows: minmax(150px, auto);*/
+    gap: 10px;
+    padding: 20px;
+}
+
+.box {
+    position: relative;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box h2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.header-image {
+   display: flex;
+   align-self: center;
+   padding: 20px;
+   height: 100px;
+   width: 50px;
+}
+
+
+header {
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: 'HappyMonkey', cursive;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.searchbox {
+    display: inline;
+    justify-content: baseline;
+    width: 50%;
+}
+
+i {
+    display: flex;
+    justify-content: center;
+    padding-right: 60px;
+}
+
+
+.searchbox a {
+    display: inline;
+    padding-right: 20px;
+    color: black;
+    transition: .3s ease;
+}
+
+.searchbox a:hover {
+    color: rgb(211, 42, 4);
+}
+
+.under-h {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 3px black;
+}
+
+.under-h li {
+    display: inline;
+    padding-left: 50px;
+}
+
+.under-h li a {
+    color: black;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.under-h li a:hover {
+    color: rgb(211, 42, 4);
+}
+
+
+footer {
+    padding: 20px;
+    background-color: black;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+}
+
+.foot li {
+    display: flex;
+    display: inline;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.foot li a {
+    color: white;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.foot li a:hover {
+    color: rgb(211, 42, 4);
+}
+
+.copy {
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    .container {
+       grid-template-columns: repeat(2,1fr);
+    }
+}
