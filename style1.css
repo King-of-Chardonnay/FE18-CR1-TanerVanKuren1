@@ -14,6 +14,7 @@ body {
     width: 100%;
     height: 40vh;
     display: block;
+    box-shadow: 0 2px 10px 0px grey;
 }
 
 .container {
@@ -43,9 +44,9 @@ body {
 .header-image {
     display: flex;
     align-self: center;
-    padding: 20px;
-    height: 100px;
-    width: 50px;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
 }
 
 header {
@@ -53,7 +54,7 @@ header {
     background: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 h1 {
@@ -76,9 +77,8 @@ i {
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 100%;
-    padding: 20px;
-    box-shadow: 0 0 3px black;
+    padding: 5px;
+    box-shadow: 0 0 2px black;
 }
 
 .under-h ul {
@@ -88,7 +88,7 @@ i {
 
 .under-h li {
     display: inline;
-    padding-left: 50px;
+    padding: 10px;
 }
 
 .under-h li a {
